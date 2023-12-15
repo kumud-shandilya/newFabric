@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabricLibrary", "FabricLibrary\FabricLibrary.csproj", "{3361D169-7D92-4F83-BF23-F4F12840D1BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabricApp", "FabricApp\FabricApp.csproj", "{711F689D-F4D5-4C60-96CD-D1A4E7F33A76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3361D169-7D92-4F83-BF23-F4F12840D1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3361D169-7D92-4F83-BF23-F4F12840D1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3361D169-7D92-4F83-BF23-F4F12840D1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3361D169-7D92-4F83-BF23-F4F12840D1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711F689D-F4D5-4C60-96CD-D1A4E7F33A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711F689D-F4D5-4C60-96CD-D1A4E7F33A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711F689D-F4D5-4C60-96CD-D1A4E7F33A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711F689D-F4D5-4C60-96CD-D1A4E7F33A76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

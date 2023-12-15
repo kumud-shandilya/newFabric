@@ -1,0 +1,125 @@
+# This is the configuration for Porter
+# You must define steps for each action, but the rest is optional
+# See https://getporter.org/bundle/manifest/file-format/ for a description of all the allowed fields in this document.
+# See https://getporter.org/author-bundles for documentation on how to configure your bundle.
+# Uncomment out the sections below to take full advantage of what Porter can do!
+
+# Optional indicator of the resource type of this file
+schemaType: Bundle
+
+# Version of the porter.yaml schema used by this file.
+schemaVersion: 1.0.1
+
+# Name of the bundle
+name: porter-hello
+
+# Version of the bundle. Change this each time you modify a published bundle.
+version: 0.1.0
+
+# Description of the bundle and what it does.
+description: "An example Porter configuration"
+
+# Registry where the bundle is published to by default
+registry: "localhost:5000"
+
+# If you want to customize the Dockerfile in use, uncomment the line below and update the referenced file. 
+# See https://getporter.org/bundle/custom-dockerfile/
+#dockerfile: template.Dockerfile
+
+# Declare and optionally configure the mixins used by the bundle
+mixins:
+  - exec
+  - fabric
+  - FabricMixin
+
+# Define the steps that should execute when the bundle is installed
+install:
+  - FabricMixin:
+      name : "test"
+  # - fabric:
+  #     workspace: "dfb63064-95dd-4eb4-92aa-7cb95516575d"
+  #     token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSIsImtpZCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlhdCI6MTY5Nzc5Mzk3OCwibmJmIjoxNjk3NzkzOTc4LCJleHAiOjE2OTc3OTg3NDksImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBWVFBZS84VUFBQUFZUFlZbE9DalpnWXplcU56Zk92U2JpblV4S2JvbDRFVHlqT1pPbzgyUmEwY0pNcDJwZUJNR05xcjRMVmpRajltZkFHVHhGMVFpODRNcUpoTXNOSFltZVM4clJjS3EwZTFqSWRQb09SQWlGaFVNYy92TlVGbDZJRkRIcVk4OVFtWjVBZEtZOTAwZlBZOG84M2Q4ZkxYNVMwNHhreFRia3NjbGVaNEhWZFA4czA9IiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6Ijg3MWMwMTBmLTVlNjEtNGZiMS04M2FjLTk4NjEwYTdlOTExMCIsImFwcGlkYWNyIjoiMCIsImNvbnRyb2xzIjpbImFwcF9yZXMiXSwiY29udHJvbHNfYXVkcyI6WyIwMDAwMDAwOS0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiXSwiZGV2aWNlaWQiOiJlZGM3Y2Y2My03YWRjLTQ2OGYtODhiMi05NDdiNDA4NzU2N2IiLCJmYW1pbHlfbmFtZSI6IlNoYW5kaWx5YSIsImdpdmVuX25hbWUiOiJLdW11ZCIsImlwYWRkciI6IjEwNi41MS4xNy41OCIsIm5hbWUiOiJLdW11ZCBTaGFuZGlseWEiLCJvaWQiOiIwOTgwZGVlZC03ZTRkLTRiM2QtYmMxOC1lNDQ0M2RhMmMwYjAiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjEyNzUyMTE4NC0xNjA0MDEyOTIwLTE4ODc5Mjc1MjctNjk0NDQwNzIiLCJwdWlkIjoiMTAwMzIwMDJDMDcxQTE5OCIsInJoIjoiMC5BUm9BdjRqNWN2R0dyMEdScXkxODBCSGJSd2tBQUFBQUFBQUF3QUFBQUFBQUFBQWFBRE0uIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lnbmluX3N0YXRlIjpbImR2Y19tbmdkIiwiZHZjX2NtcCIsImttc2kiXSwic3ViIjoiSmpqdzFqOWFXRUs3QndpUjNCd3ViNFJ0MWFVWjlFaTdnaEE5Q3RZbjRuQSIsInRpZCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsInVuaXF1ZV9uYW1lIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXBuIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXRpIjoieGd5a2dXSXVfRW1SWHFxbmZnQW5BQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19jYyI6WyJDUDEiXX0.nCsyXBo1yWqpz-hkJvpu9LIsIPbrXCMP8BnshIugjay3TRijKqNgcjZamIOZ6ZEuMPizpqCPXT_7eJCsw4KXJS9P2Q1YsrrXvJIY1qUhj2JSpHKzYWxSAB_KeihwFomnuioFSWMcyiqREAr61to8nPuVoj3-BShsBSsPYJc-SQiTnBxoqysABbyoOa-AMOAUO4JKPn023nXmNaQdod2ZRYRh7ewQCGVENEDgf_xmKRrqHQRTnL4wjTJAJjY_ICFYsJVmLqd0RSVxbxhUebbFtn0thzYjEUh2L2g02YfazpDJCQ832hFJolTVI3G6pZMDKMU-i_ZFczTmPvafm7lpkw"
+  #     arguments: {"displayName": "kumud_lakehouse15", "type": "Lakehouse"}
+  # - fabric:
+  #     workspace: "dfb63064-95dd-4eb4-92aa-7cb95516575d"
+  #     token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSIsImtpZCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlhdCI6MTY5Nzc5Mzk3OCwibmJmIjoxNjk3NzkzOTc4LCJleHAiOjE2OTc3OTg3NDksImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBWVFBZS84VUFBQUFZUFlZbE9DalpnWXplcU56Zk92U2JpblV4S2JvbDRFVHlqT1pPbzgyUmEwY0pNcDJwZUJNR05xcjRMVmpRajltZkFHVHhGMVFpODRNcUpoTXNOSFltZVM4clJjS3EwZTFqSWRQb09SQWlGaFVNYy92TlVGbDZJRkRIcVk4OVFtWjVBZEtZOTAwZlBZOG84M2Q4ZkxYNVMwNHhreFRia3NjbGVaNEhWZFA4czA9IiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6Ijg3MWMwMTBmLTVlNjEtNGZiMS04M2FjLTk4NjEwYTdlOTExMCIsImFwcGlkYWNyIjoiMCIsImNvbnRyb2xzIjpbImFwcF9yZXMiXSwiY29udHJvbHNfYXVkcyI6WyIwMDAwMDAwOS0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiXSwiZGV2aWNlaWQiOiJlZGM3Y2Y2My03YWRjLTQ2OGYtODhiMi05NDdiNDA4NzU2N2IiLCJmYW1pbHlfbmFtZSI6IlNoYW5kaWx5YSIsImdpdmVuX25hbWUiOiJLdW11ZCIsImlwYWRkciI6IjEwNi41MS4xNy41OCIsIm5hbWUiOiJLdW11ZCBTaGFuZGlseWEiLCJvaWQiOiIwOTgwZGVlZC03ZTRkLTRiM2QtYmMxOC1lNDQ0M2RhMmMwYjAiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjEyNzUyMTE4NC0xNjA0MDEyOTIwLTE4ODc5Mjc1MjctNjk0NDQwNzIiLCJwdWlkIjoiMTAwMzIwMDJDMDcxQTE5OCIsInJoIjoiMC5BUm9BdjRqNWN2R0dyMEdScXkxODBCSGJSd2tBQUFBQUFBQUF3QUFBQUFBQUFBQWFBRE0uIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lnbmluX3N0YXRlIjpbImR2Y19tbmdkIiwiZHZjX2NtcCIsImttc2kiXSwic3ViIjoiSmpqdzFqOWFXRUs3QndpUjNCd3ViNFJ0MWFVWjlFaTdnaEE5Q3RZbjRuQSIsInRpZCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsInVuaXF1ZV9uYW1lIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXBuIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXRpIjoieGd5a2dXSXVfRW1SWHFxbmZnQW5BQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19jYyI6WyJDUDEiXX0.nCsyXBo1yWqpz-hkJvpu9LIsIPbrXCMP8BnshIugjay3TRijKqNgcjZamIOZ6ZEuMPizpqCPXT_7eJCsw4KXJS9P2Q1YsrrXvJIY1qUhj2JSpHKzYWxSAB_KeihwFomnuioFSWMcyiqREAr61to8nPuVoj3-BShsBSsPYJc-SQiTnBxoqysABbyoOa-AMOAUO4JKPn023nXmNaQdod2ZRYRh7ewQCGVENEDgf_xmKRrqHQRTnL4wjTJAJjY_ICFYsJVmLqd0RSVxbxhUebbFtn0thzYjEUh2L2g02YfazpDJCQ832hFJolTVI3G6pZMDKMU-i_ZFczTmPvafm7lpkw"
+  #     arguments: {"displayName": "kumud_lakehouse16", "type": "Lakehouse"}
+  # - fabric:
+  #     workspace: "dfb63064-95dd-4eb4-92aa-7cb95516575d"
+  #     token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSIsImtpZCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlhdCI6MTY5Nzc5Mzk3OCwibmJmIjoxNjk3NzkzOTc4LCJleHAiOjE2OTc3OTg3NDksImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBWVFBZS84VUFBQUFZUFlZbE9DalpnWXplcU56Zk92U2JpblV4S2JvbDRFVHlqT1pPbzgyUmEwY0pNcDJwZUJNR05xcjRMVmpRajltZkFHVHhGMVFpODRNcUpoTXNOSFltZVM4clJjS3EwZTFqSWRQb09SQWlGaFVNYy92TlVGbDZJRkRIcVk4OVFtWjVBZEtZOTAwZlBZOG84M2Q4ZkxYNVMwNHhreFRia3NjbGVaNEhWZFA4czA9IiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6Ijg3MWMwMTBmLTVlNjEtNGZiMS04M2FjLTk4NjEwYTdlOTExMCIsImFwcGlkYWNyIjoiMCIsImNvbnRyb2xzIjpbImFwcF9yZXMiXSwiY29udHJvbHNfYXVkcyI6WyIwMDAwMDAwOS0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiXSwiZGV2aWNlaWQiOiJlZGM3Y2Y2My03YWRjLTQ2OGYtODhiMi05NDdiNDA4NzU2N2IiLCJmYW1pbHlfbmFtZSI6IlNoYW5kaWx5YSIsImdpdmVuX25hbWUiOiJLdW11ZCIsImlwYWRkciI6IjEwNi41MS4xNy41OCIsIm5hbWUiOiJLdW11ZCBTaGFuZGlseWEiLCJvaWQiOiIwOTgwZGVlZC03ZTRkLTRiM2QtYmMxOC1lNDQ0M2RhMmMwYjAiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjEyNzUyMTE4NC0xNjA0MDEyOTIwLTE4ODc5Mjc1MjctNjk0NDQwNzIiLCJwdWlkIjoiMTAwMzIwMDJDMDcxQTE5OCIsInJoIjoiMC5BUm9BdjRqNWN2R0dyMEdScXkxODBCSGJSd2tBQUFBQUFBQUF3QUFBQUFBQUFBQWFBRE0uIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lnbmluX3N0YXRlIjpbImR2Y19tbmdkIiwiZHZjX2NtcCIsImttc2kiXSwic3ViIjoiSmpqdzFqOWFXRUs3QndpUjNCd3ViNFJ0MWFVWjlFaTdnaEE5Q3RZbjRuQSIsInRpZCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsInVuaXF1ZV9uYW1lIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXBuIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXRpIjoieGd5a2dXSXVfRW1SWHFxbmZnQW5BQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19jYyI6WyJDUDEiXX0.nCsyXBo1yWqpz-hkJvpu9LIsIPbrXCMP8BnshIugjay3TRijKqNgcjZamIOZ6ZEuMPizpqCPXT_7eJCsw4KXJS9P2Q1YsrrXvJIY1qUhj2JSpHKzYWxSAB_KeihwFomnuioFSWMcyiqREAr61to8nPuVoj3-BShsBSsPYJc-SQiTnBxoqysABbyoOa-AMOAUO4JKPn023nXmNaQdod2ZRYRh7ewQCGVENEDgf_xmKRrqHQRTnL4wjTJAJjY_ICFYsJVmLqd0RSVxbxhUebbFtn0thzYjEUh2L2g02YfazpDJCQ832hFJolTVI3G6pZMDKMU-i_ZFczTmPvafm7lpkw"
+  #     arguments: {"displayName": "kumud_lakehouse17", "type": "Lakehouse"}
+  # - fabric:
+  #     workspace: "dfb63064-95dd-4eb4-92aa-7cb95516575d"
+  #     token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSIsImtpZCI6IjlHbW55RlBraGMzaE91UjIybXZTdmduTG83WSJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlhdCI6MTY5Nzc5Mzk3OCwibmJmIjoxNjk3NzkzOTc4LCJleHAiOjE2OTc3OTg3NDksImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBWVFBZS84VUFBQUFZUFlZbE9DalpnWXplcU56Zk92U2JpblV4S2JvbDRFVHlqT1pPbzgyUmEwY0pNcDJwZUJNR05xcjRMVmpRajltZkFHVHhGMVFpODRNcUpoTXNOSFltZVM4clJjS3EwZTFqSWRQb09SQWlGaFVNYy92TlVGbDZJRkRIcVk4OVFtWjVBZEtZOTAwZlBZOG84M2Q4ZkxYNVMwNHhreFRia3NjbGVaNEhWZFA4czA9IiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6Ijg3MWMwMTBmLTVlNjEtNGZiMS04M2FjLTk4NjEwYTdlOTExMCIsImFwcGlkYWNyIjoiMCIsImNvbnRyb2xzIjpbImFwcF9yZXMiXSwiY29udHJvbHNfYXVkcyI6WyIwMDAwMDAwOS0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwMDAiLCIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiXSwiZGV2aWNlaWQiOiJlZGM3Y2Y2My03YWRjLTQ2OGYtODhiMi05NDdiNDA4NzU2N2IiLCJmYW1pbHlfbmFtZSI6IlNoYW5kaWx5YSIsImdpdmVuX25hbWUiOiJLdW11ZCIsImlwYWRkciI6IjEwNi41MS4xNy41OCIsIm5hbWUiOiJLdW11ZCBTaGFuZGlseWEiLCJvaWQiOiIwOTgwZGVlZC03ZTRkLTRiM2QtYmMxOC1lNDQ0M2RhMmMwYjAiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjEyNzUyMTE4NC0xNjA0MDEyOTIwLTE4ODc5Mjc1MjctNjk0NDQwNzIiLCJwdWlkIjoiMTAwMzIwMDJDMDcxQTE5OCIsInJoIjoiMC5BUm9BdjRqNWN2R0dyMEdScXkxODBCSGJSd2tBQUFBQUFBQUF3QUFBQUFBQUFBQWFBRE0uIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lnbmluX3N0YXRlIjpbImR2Y19tbmdkIiwiZHZjX2NtcCIsImttc2kiXSwic3ViIjoiSmpqdzFqOWFXRUs3QndpUjNCd3ViNFJ0MWFVWjlFaTdnaEE5Q3RZbjRuQSIsInRpZCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsInVuaXF1ZV9uYW1lIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXBuIjoia3NoYW5kaWx5YUBtaWNyb3NvZnQuY29tIiwidXRpIjoieGd5a2dXSXVfRW1SWHFxbmZnQW5BQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc19jYyI6WyJDUDEiXX0.nCsyXBo1yWqpz-hkJvpu9LIsIPbrXCMP8BnshIugjay3TRijKqNgcjZamIOZ6ZEuMPizpqCPXT_7eJCsw4KXJS9P2Q1YsrrXvJIY1qUhj2JSpHKzYWxSAB_KeihwFomnuioFSWMcyiqREAr61to8nPuVoj3-BShsBSsPYJc-SQiTnBxoqysABbyoOa-AMOAUO4JKPn023nXmNaQdod2ZRYRh7ewQCGVENEDgf_xmKRrqHQRTnL4wjTJAJjY_ICFYsJVmLqd0RSVxbxhUebbFtn0thzYjEUh2L2g02YfazpDJCQ832hFJolTVI3G6pZMDKMU-i_ZFczTmPvafm7lpkw"
+  #     arguments: {"displayName": "kumud_lakehouse18", "type": "Lakehouse"}
+ 
+        # arg1:
+        #   name: "rg"
+        #   def: "resource group"
+        
+  # - fabric: 
+  #     description: "Test"
+  #     name: "kumud"
+  #     arguments:
+  #         - "Guru"
+  #         - "p1"
+  #     flags:
+  #       f1:
+  #         name: "guru"
+  #         type: 
+  #           t1: "t"
+  #           t2: "t"
+  #     outputs:
+  #       - name: "out1"
+  #         jsonPath: "out2"
+  # - fabric: 
+  #     description: "Test2"
+  #     arguments:
+  #     - "arg1"
+  #     flags:
+  #       species: "flag1"
+  #     outputs:
+  #       - name: "out1"
+  #         jsonPath: "out2"
+        
+# Define the steps that should execute when the bundle is upgraded
+upgrade:
+  - exec:
+      description: "World 2.0"
+      command: ./helpers.sh
+      arguments:
+        - upgrade
+
+# Define the steps that should execute when the bundle is uninstalled
+uninstall:
+  - exec:
+      description: "Uninstall Hello World"
+      command: ./helpers.sh
+      arguments:
+        - uninstall
+
+# Below is an example of how to define credentials
+# See https://getporter.org/author-bundles/#credentials
+#credentials:
+#  - name: kubeconfig
+#    path: /home/nonroot/.kube/config
+#  - name: username
+#    env: USERNAME
+
+# Below is an example of how to define parameters
+# See https://getporter.org/author-bundles/#parameters
+#parameters:
+#  - name: mysql_user
+#    type: string
+#    default: wordpress
+
+# Below is an example of how to define state variables
+# for the terraform mixin. This allows you to track
+# terraform state using the bundle instead of configuring
+# a remote backend.
+# See https://getporter.org/author-bundles/#state
+#state:
+#  - name: tfstate
+#    path: terraform/terraform.tfstate
+#  - name: tfvars
+#    path: terraform/terraform.tfvars.json

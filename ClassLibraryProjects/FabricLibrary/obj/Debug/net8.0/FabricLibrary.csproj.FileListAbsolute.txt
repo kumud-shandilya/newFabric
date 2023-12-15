@@ -1,0 +1,11 @@
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/bin/Debug/net8.0/FabricLibrary.deps.json
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/bin/Debug/net8.0/FabricLibrary.dll
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/bin/Debug/net8.0/FabricLibrary.pdb
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/FabricLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/FabricLibrary.AssemblyInfoInputs.cache
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/FabricLibrary.AssemblyInfo.cs
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/FabricLibrary.csproj.CoreCompileInputs.cache
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/FabricLibrary.dll
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/refint/FabricLibrary.dll
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/FabricLibrary.pdb
+/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/Debug/net8.0/ref/FabricLibrary.dll

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FabricApp/1.0.0": {
+        "dependencies": {
+          "FabricLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FabricApp.dll": {}
+        }
+      },
+      "FabricLibrary/1.0.0": {
+        "runtime": {
+          "FabricLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FabricApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FabricLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

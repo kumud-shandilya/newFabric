@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kshandilya/ClassLibraryProjects/FabricApp/FabricApp.csproj": {}
+  },
+  "projects": {
+    "/home/kshandilya/ClassLibraryProjects/FabricApp/FabricApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kshandilya/ClassLibraryProjects/FabricApp/FabricApp.csproj",
+        "projectName": "FabricApp",
+        "projectPath": "/home/kshandilya/ClassLibraryProjects/FabricApp/FabricApp.csproj",
+        "packagesPath": "/home/kshandilya/.nuget/packages/",
+        "outputPath": "/home/kshandilya/ClassLibraryProjects/FabricApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kshandilya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/kshandilya/ClassLibraryProjects/FabricLibrary/FabricLibrary.csproj": {
+                "projectPath": "/home/kshandilya/ClassLibraryProjects/FabricLibrary/FabricLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/228/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/kshandilya/ClassLibraryProjects/FabricLibrary/FabricLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kshandilya/ClassLibraryProjects/FabricLibrary/FabricLibrary.csproj",
+        "projectName": "FabricLibrary",
+        "projectPath": "/home/kshandilya/ClassLibraryProjects/FabricLibrary/FabricLibrary.csproj",
+        "packagesPath": "/home/kshandilya/.nuget/packages/",
+        "outputPath": "/home/kshandilya/ClassLibraryProjects/FabricLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kshandilya/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/228/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
