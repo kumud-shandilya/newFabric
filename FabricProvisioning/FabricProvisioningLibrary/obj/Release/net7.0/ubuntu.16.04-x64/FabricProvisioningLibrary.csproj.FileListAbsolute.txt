@@ -1,0 +1,13 @@
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/bin/Release/net7.0/ubuntu.16.04-x64/Microsoft.Fabric.Provisioning.Library.deps.json
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/bin/Release/net7.0/ubuntu.16.04-x64/Microsoft.Fabric.Provisioning.Library.dll
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/bin/Release/net7.0/ubuntu.16.04-x64/Microsoft.Fabric.Provisioning.Library.pdb
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/FabricProvisioningLibrary.csproj.AssemblyReference.cache
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/FabricProvisioningLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/FabricProvisioningLibrary.AssemblyInfoInputs.cache
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/FabricProvisioningLibrary.AssemblyInfo.cs
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/FabricProvisioningLibrary.csproj.CoreCompileInputs.cache
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/FabricProvisioningLibrary.sourcelink.json
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/Microsoft.Fabric.Provisioning.Library.dll
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/refint/Microsoft.Fabric.Provisioning.Library.dll
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/Microsoft.Fabric.Provisioning.Library.pdb
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/Release/net7.0/ubuntu.16.04-x64/ref/Microsoft.Fabric.Provisioning.Library.dll

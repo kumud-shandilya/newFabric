@@ -1,0 +1,13 @@
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/bin/release/net7.0/Microsoft.Fabric.Provisioning.Library.deps.json
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/bin/release/net7.0/Microsoft.Fabric.Provisioning.Library.dll
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/bin/release/net7.0/Microsoft.Fabric.Provisioning.Library.pdb
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/FabricProvisioningLibrary.csproj.AssemblyReference.cache
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/FabricProvisioningLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/FabricProvisioningLibrary.AssemblyInfoInputs.cache
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/FabricProvisioningLibrary.AssemblyInfo.cs
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/FabricProvisioningLibrary.csproj.CoreCompileInputs.cache
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/FabricProvisioningLibrary.sourcelink.json
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/Microsoft.Fabric.Provisioning.Library.dll
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/refint/Microsoft.Fabric.Provisioning.Library.dll
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/Microsoft.Fabric.Provisioning.Library.pdb
+/home/kshandilya/p/FabricProvisioning/FabricProvisioningLibrary/obj/release/net7.0/ref/Microsoft.Fabric.Provisioning.Library.dll

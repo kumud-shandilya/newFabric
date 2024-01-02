@@ -24,7 +24,7 @@ registry: "localhost:5000"
 
 # If you want to customize the Dockerfile in use, uncomment the line below and update the referenced file. 
 # See https://getporter.org/bundle/custom-dockerfile/
-#dockerfile: template.Dockerfile
+dockerfile: template.Dockerfile
 
 # Declare and optionally configure the mixins used by the bundle
 mixins:

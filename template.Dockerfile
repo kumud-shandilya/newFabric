@@ -18,7 +18,7 @@ FROM --platform=linux/amd64 debian:stable-slim
 WORKDIR /app
 
 # Copy the ClassLibraryProjects folder into the image
-COPY ClassLibraryProjects /app/ClassLibraryProjects
+COPY Library /app/Library
 
 # PORTER_INIT
 
