@@ -18,7 +18,10 @@ FROM --platform=linux/amd64 debian:stable-slim
 WORKDIR /app
 
 # Copy the ClassLibraryProjects folder into the image
-COPY Library /app/Library
+COPY  --link --chmod=0755 /bin/release/net7.0 /app
+# COPY Library /usr/local/bin/Library
+# RUN chmod +777 /usr/local/bin/ubuntu.16.04-x64
+# RUN chmod +777 /usr/local/bin/ubuntu.16.04-x64/Microsoft.Fabric.Provisioning.Client
 
 # PORTER_INIT
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4wXngPtDPJM5Qq1vBGImYMAixsrQakJKroIkhjDII7+8F5Wq29HrOC+L4pm5T0cclEAcJJszkCJZJqwPRNw6Yw==",
+  "dgSpecHash": "Z4qIS4WjxRzYFG+5qN3aX9bKhdGHWrvy9tHdqEVtWikF3JmSAtZmnXSc6herhmLGKqq3fTYCvhOb03yv1CH/tg==",
   "success": true,
   "projectFilePath": "/home/kshandilya/p/FabricProvisioning/FabricProvisioningClient/FabricProvisioningClient.csproj",
   "expectedPackageFiles": [
@@ -20,12 +20,7 @@
     "/home/kshandilya/.nuget/packages/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg.sha512",
     "/home/kshandilya/.nuget/packages/system.net.http.json/8.0.0/system.net.http.json.8.0.0.nupkg.sha512",
     "/home/kshandilya/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/home/kshandilya/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
-    "/home/kshandilya/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "/home/kshandilya/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/7.0.14/microsoft.netcore.app.runtime.linux-x64.7.0.14.nupkg.sha512",
-    "/home/kshandilya/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "/home/kshandilya/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/7.0.14/microsoft.aspnetcore.app.runtime.linux-x64.7.0.14.nupkg.sha512",
-    "/home/kshandilya/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.14/microsoft.netcore.app.host.linux-x64.7.0.14.nupkg.sha512"
+    "/home/kshandilya/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
